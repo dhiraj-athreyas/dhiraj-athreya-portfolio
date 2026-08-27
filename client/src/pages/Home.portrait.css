@@ -95,5 +95,5 @@
 
 @media (min-width: 1024px) {
   .hero-portrait { right: clamp(-200px, -13vw, -150px); }
-  .system-status { position: relative; left: clamp(-300px, -20vw, -230px); transform: none !important; }
+  .system-status { position: relative; left: clamp(-120px, -7vw, -80px); transform: none !important; }
 }
