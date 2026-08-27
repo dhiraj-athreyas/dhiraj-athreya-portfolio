@@ -5,7 +5,7 @@
 .hero-portrait {
   position: absolute;
   z-index: 0;
-  right: clamp(-78px, -2vw, -18px);
+  right: clamp(-200px, -13vw, -110px);
   bottom: 0;
   width: clamp(360px, 37vw, 586px);
   height: min(88%, 740px);
@@ -13,6 +13,7 @@
   overflow: hidden;
   mask-image: linear-gradient(90deg, transparent 0%, rgba(0,0,0,.92) 21%, #000 42% 100%);
 }
+
 
 .hero-portrait::before {
   content: "";
@@ -28,6 +29,7 @@
   clip-path: polygon(0 0, 87% 0, 100% 9%, 100% 100%, 0 100%, 11% 91%, 11% 11%);
 }
 
+
 .hero-portrait::after {
   content: "";
   position: absolute;
@@ -35,6 +37,7 @@
   inset: 0;
   background: linear-gradient(180deg, rgba(3,4,6,.36), transparent 22%, transparent 75%, #030406 100%), linear-gradient(90deg, #030406 1%, transparent 48%);
 }
+
 
 .hero-portrait img {
   width: 100%;
@@ -44,6 +47,7 @@
   opacity: .85;
   filter: contrast(1.04) saturate(.92);
 }
+
 
 .hero-portrait span {
   position: absolute;
@@ -58,19 +62,16 @@
   letter-spacing: .1em;
 }
 
+
 .hero-content, .system-status, .scroll-cue { z-index: 2; }
 .hero-visual img { opacity: .39; }
+
 
 @media (max-width: 1023px) {
   .hero-portrait { width: min(60vw, 520px); right: -42px; height: 82%; }
   .hero-portrait img { opacity: .62; }
 }
 
+
 @media (max-width: 720px) {
   .hero-portrait { width: min(89vw, 420px); right: -71px; top: 64px; bottom: auto; height: 435px; opacity: .64; mask-image: linear-gradient(90deg, transparent 0%, rgba(0,0,0,.75) 38%, #000 100%); }
-  .hero-portrait::before { top: 14%; right: 9%; width: 36%; height: 40%; }
-  .hero-portrait::after { background: linear-gradient(180deg, #030406 0%, rgba(3,4,6,.44) 23%, rgba(3,4,6,.3) 63%, #030406 100%), linear-gradient(90deg, #030406 0%, rgba(3,4,6,.3) 58%, transparent 100%); }
-  .hero-portrait img { opacity: .8; object-position: 49% 12%; }
-  .hero-portrait span { display: none; }
-  .hero-content, .system-status, .scroll-cue { z-index: 3; }
-}
