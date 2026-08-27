@@ -68,6 +68,10 @@
 .hero-content, .system-status, .scroll-cue { z-index: 2; }
 .hero-visual img { opacity: .39; }
 
+@media (min-width: 1024px) {
+  .hero-portrait { right: clamp(-340px, -22vw, -250px); }
+}
+
 
 @media (max-width: 1023px) {
   .hero-portrait { width: min(60vw, 520px); right: -42px; height: 82%; }
