@@ -75,3 +75,9 @@
 
 @media (max-width: 720px) {
   .hero-portrait { width: min(89vw, 420px); right: -71px; top: 64px; bottom: auto; height: 435px; opacity: .64; mask-image: linear-gradient(90deg, transparent 0%, rgba(0,0,0,.75) 38%, #000 100%); }
+  .hero-portrait::before { top: 14%; right: 9%; width: 36%; height: 40%; }
+  .hero-portrait::after { background: linear-gradient(180deg, #030406 0%, rgba(3,4,6,.44) 23%, rgba(3,4,6,.3) 63%, #030406 100%), linear-gradient(90deg, #030406 0%, rgba(3,4,6,.3) 58%, transparent 100%); }
+  .hero-portrait img { opacity: .8; object-position: 49% 12%; }
+  .hero-portrait span { display: none; }
+  .hero-content, .system-status, .scroll-cue { z-index: 3; }
+}
