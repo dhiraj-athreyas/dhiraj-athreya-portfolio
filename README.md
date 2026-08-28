@@ -44,28 +44,3 @@ AI/ML Engineer with 1+ year of production experience building and deploying Comp
 
 ---
 
-## Repository Guide & Development
-
-This is a static Vite + React + TypeScript web app.
-
-### Main Content Locations
-| Purpose | Location |
-| --- | --- |
-| Portfolio projects, roles, metrics, stack | `client/src/data/portfolio.ts` |
-| Page structure and sections | `client/src/pages/Home.tsx` |
-| Main visual system | `client/src/index.css` |
-| Portrait hero treatment | `client/src/pages/Home.portrait.css` |
-| Images and resume | `client/public/portfolio-assets/` |
-
-### Local Development
-Install dependencies and start the development server with:
-```bash
-npx pnpm install --frozen-lockfile
-npx pnpm dev
-```
-Use `npx pnpm build` to create the production output in `dist/public`.
-
-### Deploy to Vercel
-1. Sign in to [Vercel](https://vercel.com) using your GitHub account.
-2. Select **Add New → Project** and import `dhiraj-athreya-portfolio`.
-3. Vercel will automatically read `vercel.json` to handle the installation and build steps.
