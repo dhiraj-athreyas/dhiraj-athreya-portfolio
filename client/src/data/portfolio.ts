@@ -14,7 +14,7 @@ export type Project = {
   architecture: string[];
   stack: string[];
   role: string[];
-  visual?: "vision" | "rag";
+  visual?: "vision" | "speech" | "rag" | "tutor" | "meeting" | "sports";
 };
 
 export type Experience = {
@@ -96,6 +96,7 @@ export const projects: Project[] = [
     architecture: ["AUDIO INPUT", "VAD + LANGUAGE ID", "TRANSCRIBE", "TRANSLATE", "SPEECH SYNTHESIS"],
     stack: ["Faster-Whisper", "Silero VAD", "NLLB", "SeamlessM4T", "M2M100", "VITS", "FP16"],
     role: ["Pipeline development", "Evaluation", "Latency optimization", "Multilingual AI"],
+    visual: "speech",
   },
   {
     id: "kautilya",
@@ -131,6 +132,7 @@ export const projects: Project[] = [
     architecture: ["LEARNER QUERY", "LLM EXPLANATION", "TRANSLATION", "TEXT-TO-SPEECH", "MULTILINGUAL OUTPUT"],
     stack: ["Python", "LLMs", "VITS", "M2M100", "NLLB", "Hugging Face Transformers"],
     role: ["Application development", "Multilingual pipeline", "Generative explanation design", "Speech integration"],
+    visual: "tutor",
   },
   {
     id: "meeting-assistant",
@@ -148,6 +150,7 @@ export const projects: Project[] = [
     architecture: ["MEETING AUDIO", "SPEAKER DIARIZATION", "TRANSCRIPTION", "LLM SUMMARIZATION", "STRUCTURED MINUTES"],
     stack: ["Faster-Whisper", "Speaker Diarization", "LLMs", "Python", "Hugging Face Transformers"],
     role: ["AI application engineering", "Model evaluation", "Speech pipeline integration", "Structured output design"],
+    visual: "meeting",
   },
   {
     id: "injury-prediction",
@@ -165,6 +168,7 @@ export const projects: Project[] = [
     architecture: ["ATHLETE DATA", "PREPROCESSING", "FEATURE ENGINEERING", "MODEL INFERENCE", "FLASK APPLICATION"],
     stack: ["Python", "Flask", "Scikit-learn", "MySQL", "Pandas", "NumPy"],
     role: ["ML development", "Feature engineering", "Model tuning", "Application design"],
+    visual: "sports",
   },
 ];
 

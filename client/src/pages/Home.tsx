@@ -37,7 +37,11 @@ import {
 
 const heroVisual = "/portfolio-assets/dhiraj-hero-systems.png";
 const cvVisual = "/portfolio-assets/dhiraj-cv-pipeline.png";
+const speechVisual = "/portfolio-assets/dhiraj-speech-pipeline.png";
 const ragVisual = "/portfolio-assets/dhiraj-rag-lab.png";
+const tutorVisual = "/portfolio-assets/dhiraj-tutor-pipeline.png";
+const meetingVisual = "/portfolio-assets/dhiraj-meeting-pipeline.png";
+const sportsVisual = "/portfolio-assets/dhiraj-sports-pipeline.png";
 const logoMark = "/portfolio-assets/dhiraj-da-mark.png";
 const portraitVisual = "/portfolio-assets/dhiraj-technical-portrait.png";
 
@@ -89,7 +93,13 @@ function Architecture({ nodes }: { nodes: string[] }) {
 }
 
 function ProjectRecord({ project, isOpen, onToggle }: { project: Project; isOpen: boolean; onToggle: () => void }) {
-  const image = project.visual === "vision" ? cvVisual : project.visual === "rag" ? ragVisual : null;
+  const image = 
+    project.visual === "vision" ? cvVisual : 
+    project.visual === "speech" ? speechVisual : 
+    project.visual === "rag" ? ragVisual : 
+    project.visual === "tutor" ? tutorVisual : 
+    project.visual === "meeting" ? meetingVisual : 
+    project.visual === "sports" ? sportsVisual : null;
   return (
     <motion.article
       layout
@@ -170,7 +180,7 @@ export default function Home() {
         </a>
         <nav className="desktop-nav" aria-label="Primary navigation">
           {navItems.map(([label, href]) => <a href={href} key={label}>{label}</a>)}
-          <a className="resume-nav" href="#experience">RÉSUMÉ <Download size={13} aria-hidden="true" /></a>
+          <a className="resume-nav" href="/portfolio-assets/dhiraj-athreya-resume.pdf" target="_blank" rel="noreferrer" download="Dhiraj_Athreya_Resume.pdf">RÉSUMÉ <Download size={13} aria-hidden="true" /></a>
         </nav>
         <button className="mobile-menu-button" onClick={() => setMenuOpen(!menuOpen)} aria-expanded={menuOpen} aria-label="Toggle navigation">
           {menuOpen ? <X size={20} /> : <Menu size={20} />}

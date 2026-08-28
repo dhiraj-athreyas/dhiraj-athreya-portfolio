@@ -62,7 +62,7 @@ button:focus-visible, a:focus-visible { outline: 2px solid var(--blue); outline-
 .brand { display: inline-flex; align-items: center; gap: 11px; font: 500 12px/1 "IBM Plex Mono", monospace; letter-spacing: .1em; }
 .brand b { font-weight: 600; }.brand em { margin: 0 3px; color: var(--blue); font-style: normal; }.brand-mark { width: 31px; height: 31px; display: grid; place-items: center; border: 1px solid rgba(110,168,255,.4); background: rgba(110,168,255,.06); }
 .brand-mark img { width: 23px; height: 23px; object-fit: contain; }
-.desktop-nav { display: flex; align-items: center; gap: clamp(16px, 2vw, 29px); font: 500 10px/1 "IBM Plex Mono", monospace; letter-spacing: .1em; color: var(--muted); }
+.desktop-nav { display: flex; align-items: center; gap: clamp(16px, 2vw, 29px); font: 500 12px/1 "IBM Plex Mono", monospace; letter-spacing: .1em; color: var(--muted); }
 .desktop-nav > a { transition: color .18s ease; }.desktop-nav > a:hover { color: var(--ink); }.desktop-nav .resume-nav { display: flex; align-items: center; gap: 6px; margin-left: 7px; padding: 10px 11px; border: 1px solid var(--line); color: var(--ink); }.desktop-nav .resume-nav:hover { border-color: var(--line-bright); background: var(--blue-soft); }
 .mobile-menu-button, .mobile-nav { display: none; }
 

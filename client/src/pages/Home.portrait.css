@@ -89,11 +89,12 @@
 }
 
 @media (min-width: 1024px) {
-  .hero-portrait { right: clamp(-200px, -13vw, -150px); }
-  .system-status { transform: translateX(clamp(-690px, -45vw, -560px)); }
-}
-
-@media (min-width: 1024px) {
-  .hero-portrait { right: clamp(-200px, -13vw, -150px); }
-  .system-status { position: relative; left: clamp(-120px, -7vw, -80px); transform: none !important; }
+  .hero-portrait {
+    right: clamp(-30px, -2vw, 20px);
+  }
+  .system-status {
+    position: relative;
+    left: clamp(-340px, -22vw, -210px);
+    transform: none !important;
+  }
 }
